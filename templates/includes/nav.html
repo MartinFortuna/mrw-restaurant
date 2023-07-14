@@ -1,0 +1,33 @@
+{% load static %}
+<!--NAVBAR-->
+<nav class="navbar navbar-dark border-bottom border-warning">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon float-right"></span>
+      </button>
+
+      <a class="navbar-brand mx-auto" href=" {% url 'index' %}">
+        <img src="{% static 'mrw/images/logo-hero.png' %}" width="65" height="65" alt="Restaurant Name">Au Revoir
+        Bistrot</a>
+      <a href="#">
+        <i class="fa-solid fa-right-to-bracket fa-xl m-2 custom-color"></i>
+      </a>
+      <a href="#">
+        <button type="button" class="btn btn-warning btn-sm">Sign-up</button>
+      </a>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item mx-auto">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item mx-auto">
+            <a class="nav-link" href="#">Menu</a>
+          </li>
+          <li class="nav-item mx-auto">
+            <a class="nav-link" href="#">Find us!</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
