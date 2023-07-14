@@ -7,7 +7,7 @@ from django.db import IntegrityError
 from django.http import HttpResponse
 from django.shortcuts import redirect, render
 
-from .forms import UserSignupForm
+from .forms import BookingForm, UserSignupForm
 from .models import tbBooking
 
 # Create your views here.
@@ -87,6 +87,7 @@ def register(request):
 
 
 def booking(request):
+
     """
     Enables user make reservation with date, time and number of guests.
     Checks if django can handle if a user is authenticated
@@ -108,7 +109,7 @@ def booking(request):
                 return render(request,
                               'restaurant/booking.html',
                               {'form': BookingForm(),
-                               'error': 'input guests number.'})
+                               'error': 'Enter a least 1 guest.'})
 
             date_str = request.POST.get('date')
             date = datetime.strptime(date_str, '%Y-%m-%dT%H:%M')
@@ -131,3 +132,58 @@ def booking(request):
                           {'form': BookingForm(), 'error': 'bad data passed in'})
     else:
         return render(request, 'restaurant/booking.html')
+
+
+def booklist(request):
+    """
+    Enables regular user to see created reservations and cancel.
+    Enables admin user to see booking requests, accept
+    or deny them.
+    """
+    user = request.user
+    auth(user)
+
+    if request.method == 'POST':
+
+        id_book = None
+        action_name = ""
+
+        # extracting the book id from submit button and converting to int
+        actions = dict(
+            {'action_accept': 2, 'action_reject': 3, 'action_cancel': 4})
+        for k in actions.keys():
+            if k in request.POST:
+                id_book_str = request.POST[k]
+                if id_book_str.isnumeric():
+                    id_book = int(id_book_str)
+                    action_name = k
+
+        if id_book is not None:
+            data = tbBooking.objects.get(id=id_book)
+            data.status = actions[action_name]
+            data.save()
+
+    if user.is_superuser:
+        # Show all reservations
+        bookings = tbBooking.objects.all().order_by('date', 'created')
+        return render(request, 'restaurant/booklist.html', {'form': bookings})
+    else:
+        # Only show authenticated user reservations.
+        bookings = tbBooking.objects.all().filter(
+            user_id=user.id) .order_by(
+            'date', 'created')
+        return render(request, 'restaurant/booklist.html', {'form': bookings})
+
+    fields = [field.name for field in tbBooking._meta.get_fields()]
+    if user.is_superuser:
+        # Order reservations by date
+        bookings = tbBooking.objects.all().order_by('date', 'created')
+        return render(request, 'restaurant/booklist.html',
+                      {'fields': fields, 'form': bookings})
+    else:
+       
+        bookings = tbBooking.objects.all().filter(
+            user_id=user.id).order_by(
+            'date', 'created')
+        return render(request, 'restaurant/booklist.html',
+                      {'fields': fields, 'form': bookings})

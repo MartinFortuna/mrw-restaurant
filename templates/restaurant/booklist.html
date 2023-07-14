@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block content %}  
+{% csrf_token %}
+<div class="container">
+    <div class="flex-fill text-center">
+        {% for i in form %}
+        <div class="card bg-dark border-warning m-4">
+          <div class="row g-0">
+            <div>
+              <div class="card-body">
+                  {% if error %}
+                      <div class="alert alert-danger mt-3" role="alert">
+                          {{ error }}
+                      </div>
+                  {% endif %}
+                  <h5 class="card-title">BookID({{ i.id }})-({{ i.user.username }})</h5>
+                  <p class="card-text">Username: {{ i.user.username }}</p>
+                  <p class="card-text">Name: {{ i.user.first_name}}</p>
+                  <p class="card-text">Surname: {{ i.user.last_name }}</p>
+                  <p class="card-text">Book: {{ i.date }}</p>          
+                  <p class="card-text">Guests: {{ i.guests }}</p>          
+                  <p class="card-text text-warning">Status:                 
+                      {% if i.status == 1 %}
+                          Waiting for approval
+                      {% elif i.status == 2 %}
+                          Accept by (MRW Team)
+                      {% elif i.status == 3 %}
+                          Denied by (MRW Team)
+                      {% elif i.status == 4 %}
+                          Canceled by {{ i.user.username }}
+                      {% else %}
+                          Unknown
+                      {% endif %}
+                  </p>
+                  <p class="card-text">Created: {{ i.created }}</p>
+                  <p class="card-text">Update: {{ i.update }}</p>
+                  <form method="POST">
+                      {% csrf_token %}
+                      <!-- need  user from the session not from [i.user] -->
+                      {% if user.is_superuser %}
+                    {% if i.status == 1 %}
+                        <button type="submit" name="action_accept" value="{{ i.id }}" class="btn btn-success" >
+                            Accept
+                        </button>
+                        <button type="submit" name="action_reject" value="{{ i.id }}" class="btn btn-danger" >
+                            Reject
+                        </button>
+                    {% endif %}
+                {% else %}
+                    {% if i.status == 1 or i.status == 2 %}
+                        <button type="submit" name="action_cancel" value="{{ i.id }}" class="btn btn-warning" >
+                            Cancel
+                        </button>
+                    {% endif %}
+                {% endif %}
+                  </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %} 
+    </div>
+</div>       
+{% endblock %}

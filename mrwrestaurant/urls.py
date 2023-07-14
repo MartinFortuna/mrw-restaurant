@@ -7,4 +7,5 @@ urlpatterns = [
     path('logout', mrwViews.logoutuser, name='logoutuser'),
     path('resgister', mrwViews.register, name='register'),
     path('booking', mrwViews.booking, name='booking'),
+    path('booklist', mrwViews.booklist, name='booklist'),
 ]
