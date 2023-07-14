@@ -1,4 +1,4 @@
-
+from datetime import datetime
 
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
@@ -84,3 +84,50 @@ def register(request):
             return render(request, 'restaurant/register.html',
                           {'form': UserSignupForm,
                            'error': 'Passwords do not match.'})
+
+
+def booking(request):
+    """
+    Enables user make reservation with date, time and number of guests.
+    Checks if django can handle if a user is authenticated
+    to avoid checking all the time.
+    """
+    user = request.user
+    auth(user)
+    if request.method == 'GET':
+        return render(request, 'restaurant/booking.html',
+                      {'form': BookingForm()})
+
+    elif request.method == 'POST':
+        try:
+            guests_str = request.POST.get('guests')
+            guests = None
+            if guests_str.isnumeric():
+                guests = int(guests_str)
+            if guests is None or guests < 1:
+                return render(request,
+                              'restaurant/booking.html',
+                              {'form': BookingForm(),
+                               'error': 'input guests number.'})
+
+            date_str = request.POST.get('date')
+            date = datetime.strptime(date_str, '%Y-%m-%dT%H:%M')
+            if date is None:
+                return render(request,
+                              'restaurant/booking.html',
+                              {'form': BookingForm(),
+                               'error': 'input date and time'})
+
+            newBooking = tbBooking.objects.create(
+                user=user,
+                date=date.isoformat(),
+                guests=guests,
+                status=1)
+            newBooking.save()
+
+            return redirect('#')
+        except ValueError:
+            return render(request, 'restaurant/booking.html',
+                          {'form': BookingForm(), 'error': 'bad data passed in'})
+    else:
+        return render(request, 'restaurant/booking.html')

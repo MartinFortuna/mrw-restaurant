@@ -70,3 +70,20 @@ class UserSignupForm(UserCreationForm):
         )
     )
 
+
+class DateTimeLocalInput(forms.DateTimeInput):
+    input_type = 'datetime-local'
+    
+
+class BookingForm(forms.Form):
+    date = forms.DateTimeField(
+        required=True,
+        input_formats=['%Y-%m-%d %H:%M'],
+        widget=DateTimeLocalInput(attrs={'class': 'form-control'})
+    )
+
+    guests = forms.IntegerField(
+        required=True,
+        widget=forms.NumberInput(attrs={'placeholder': 'Guests'}),
+        validators=[MinValueValidator(1)]
+    )
