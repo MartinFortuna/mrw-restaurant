@@ -72,6 +72,30 @@ Scores:
 - Won't-Have: 0 story points
 
 
+### **Design**
+
+The website is fully responsive and designed with an easy access hamburger menu to make nagivation intuitive, the login button button will be replaced by a login icon so that the device stays reponsive on very small screens. 
+As for the colors, I decided to use Bootstrap's dark background along with it's warning yellow across the website for consistency.
+
+#### App structure: 
+
+- Non authenticated user Flow:
+
+![Non authenticated user](docs/screenshots/Unauthenticateduser.png)
+
+- Authenticated user Flow:
+
+![Admin user authenticated](docs/screenshots/Adminauthenticated.png)
+
+![Regular user authenticated](docs/screenshots/Regularuserauthenticated.png)
+
+
+
+
+
+
+
+
 
 
 
