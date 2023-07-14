@@ -31,7 +31,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-martinfortu-mrwrestaura-sd8jrf4zwzc.ws-eu101.gitpod.io', 'mrw-restaurant.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['8000-martinfortu-mrwrestaura-sd8jrf4zwzc.ws-eu101.gitpod.io', 'mrw-restaurant-3c3e8ad5a844.herokuapp.com', 'localhost']
 
 
 # Application definition
