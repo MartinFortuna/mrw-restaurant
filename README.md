@@ -72,12 +72,12 @@ Scores:
 - Won't-Have: 0 story points
 
 
-### **Design**
+## **Design**
 
 The website is fully responsive and designed with an easy access hamburger menu to make nagivation intuitive, the login button button will be replaced by a login icon so that the device stays reponsive on very small screens. 
 As for the colors, I decided to use Bootstrap's dark background along with it's warning yellow across the website for consistency.
 
-#### App structure: 
+### App structure: 
 
 - Non authenticated user Flow:
 
@@ -88,6 +88,24 @@ As for the colors, I decided to use Bootstrap's dark background along with it's 
 ![Admin user authenticated](docs/screenshots/Adminauthenticated.png)
 
 ![Regular user authenticated](docs/screenshots/Regularuserauthenticated.png)
+
+
+### Wireframes: 
+
+|    Desktop   |    Tablet    |    Mobile    |
+|    :----:    |     :----:   |    :----:    |
+|[Home Page](docs/screenshots/hompageDesktop.png)|[Home Page](docs/screenshots/homepageIpad.png)|[Home Page](docs/screenshots/homepageMobile.png)|
+|[Login](docs/screenshots/loginDesktop.png)|[Same as Desktop](docs/screenshots/loginDesktop.png)|[Same as Desktop](docs/screenshots/loginDesktop.png)|
+|[Register](docs/screenshots/Sign-up.png)|[Same as Desktop](docs/screenshots/Sign-up.png)|[Same as Desktop](docs/screenshots/Sign-up.png)|
+|[Menu](docs/screenshots/menuDesktop.png)|[Menu](docs/screenshots/menuIpad.png)|[Menu](docs/screenshots/menuMobile.png)|
+|[Find us](docs/screenshots/findusDesktop.png)|[Find us](docs/screenshots/findusIpad.png)|[Find us](docs/screenshots/findusMobile.png)|
+|[Booking Requests](docs/screenshots/bookingrequestsDesktop.png)|[Same as Desktop](docs//bookingrequestsDesktop.png)|[Same as Desktop](docs/screenshots/bookingrequestsDesktop.png)|
+|[Customer List](docs/screenshots/customerlist.png)|[Same as Desktop](docs/screenshots/customerlist.png)|[Same as Desktop](docs/screenshots/customerlist.png)|
+|[Profile](docs/screenshots/regularuserprofile.png)|[Same as Desktop](docs/screenshots/regularuserprofile.png)|[Same as Desktop](docs/screenshots/regularuserprofile.png)|
+|[Book a table](docs/screenshots/bookatableDesktop.png)|[Same as Desktop](docs/screenshots/bookatableDesktop.png)|[Same as Desktop](docs/screenshots/bookatableDesktop.png)|
+|[My Bookings](docs/screenshots/mybookindsDesktop.png)|[Same as Desktop](docs/screenshots/mybookindsDesktop.png)|[Same as Desktop](docs/screenshots/mybookindsDesktop.png)|
+
+
 
 
 
