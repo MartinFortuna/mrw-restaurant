@@ -51,3 +51,5 @@ def logoutuser(request):
     """
     logout(request)
     return redirect('index')
+
+
