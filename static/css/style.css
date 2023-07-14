@@ -46,7 +46,7 @@ main {
   }
 
 
-/*= Media Queries =*/
+/*= Media Queries for index =*/
 
 /* Override Bootstrap classes to fit nav buttons on very small screens from 280px to 360px*/
 
@@ -93,4 +93,34 @@ main {
     .smallscreen {
       display: none;
     }
+  }
+
+
+/*== Footer ==*/
+
+
+footer a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+  }
+  
+  footer a:hover {
+    color: #ffc107;
+  }
+  
+  ul.social {
+    list-style: none;
+    display: flex;
+    max-width: 10rem;
+    margin: 0 auto;
+  }
+  
+  ul.social li {
+    margin: 0 auto;
+  }
+  
+  .copywright {
+    width: 100%;
+    margin-left: 1rem;
   }
