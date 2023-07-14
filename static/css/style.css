@@ -45,4 +45,32 @@ main {
     margin-top: 2rem;
   }
 
+
+/*= Media Queries =*/
+
+/* Override Bootstrap classes to fit nav buttons on very small screens from 280px to 360px*/
+
+@media (max-width: 360px) { 
+    .navbar-toggler {
+      font-size: 0.5rem;
+    }
   
+    .navbar-brand {
+      font-size: 1rem;
+    }
+  
+    .fa-xl {
+      font-size: 1rem;
+    }
+  
+    .btn-sm {
+      font-size: 0.5rem;
+    }
+  }
+  
+  @media (max-width: 575.97px) { 
+    nav .container-fluid {
+      padding-right: var(--bs-gutter-x,.1rem); 
+      padding-left: var(--bs-gutter-x,.1rem);
+  }
+  }
