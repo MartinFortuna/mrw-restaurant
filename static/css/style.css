@@ -74,3 +74,23 @@ main {
       padding-left: var(--bs-gutter-x,.1rem);
   }
   }
+
+  /* Ajust about section on medium to large screens */
+
+@media (max-width: 575.98px) { 
+    .col-sm-4 img {
+      max-height: 15rem;
+    }
+}
+
+@media (min-width: 575.99px) { 
+  .col-sm-4 img {
+    max-height: 22rem;
+  }
+}
+
+@media (min-width: 575.99px) {
+    .smallscreen {
+      display: none;
+    }
+  }
