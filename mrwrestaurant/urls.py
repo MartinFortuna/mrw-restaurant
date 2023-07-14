@@ -5,4 +5,5 @@ urlpatterns = [
     path('', mrwViews.index, name='index'),
     path('login', mrwViews.loginuser, name='loginuser'),
     path('logout', mrwViews.logoutuser, name='logoutuser'),
+    path('resgister', mrwViews.register, name='register'),
 ]

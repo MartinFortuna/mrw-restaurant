@@ -1,11 +1,14 @@
 
 
 from django.contrib.auth import authenticate, login, logout
-from django.contrib.auth.forms import AuthenticationForm
+from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
 from django.contrib.auth.models import User
 from django.db import IntegrityError
 from django.http import HttpResponse
 from django.shortcuts import redirect, render
+
+from .forms import UserSignupForm
+from .models import tbBooking
 
 # Create your views here.
 
@@ -52,9 +55,11 @@ def logoutuser(request):
     logout(request)
     return redirect('index')
 
-    
 
 def register(request):
+    """
+    Enables user to sign-up with form validation and checks if username taken.
+    """
     if request.method == 'GET':
         return render(request, 'restaurant/register.html',
                       {'form': UserSignupForm})
@@ -74,7 +79,7 @@ def register(request):
                 return render(request,
                               'restaurant/register.html',
                               {'form': UserSignupForm,
-                               'error': 'Username already taken. Choose new username.'})
+                               'error': 'Username taken, choose another one.'})
         else:
             return render(request, 'restaurant/register.html',
                           {'form': UserSignupForm,
