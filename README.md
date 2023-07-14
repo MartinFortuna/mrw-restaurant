@@ -22,7 +22,7 @@ As part of my journey as a student of Code Institute, the goal of this project i
 
 The development phase was applied with Agile methodologies to deliver small features with efficiency and maintain hypothetical business value. User stories were prioritized according to the MoSCoW method to deliver the primarily needed functionalities first.
 
-![Project Kanban](#)
+![Project Kanban](https://github.com/users/MartinFortuna/projects/6/views/1?visibleFields=%5B%22Title%22%2C%22Assignees%22%2C%22Status%22%2C%22Labels%22%2C%22Repository%22%5D)
 
 
 ### **User stories**
