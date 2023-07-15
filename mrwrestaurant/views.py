@@ -126,7 +126,7 @@ def booking(request):
                 status=1)
             newBooking.save()
 
-            return redirect('#')
+            return redirect('booklist')
         except ValueError:
             return render(request, 'restaurant/booking.html',
                           {'form': BookingForm(), 'error': 'bad data passed in'})
