@@ -220,3 +220,16 @@ def userlist(request):
     else:
         users = [user]
         return render(request, 'restaurant/userprofile.html', {'users': users})
+
+
+def edituser(request, user_id):
+    user_edit = User.objects.get(id=user_id)
+    if request.method == 'POST':
+        if 'first_name' in request.POST and user_edit is not None:
+            user_edit.first_name = request.POST['first_name']
+            user_edit.last_name = request.POST['last_name']
+            user_edit.email = request.POST['email']
+            user_edit.save()
+            return redirect('userlist')
+
+    return render(request, 'restaurant/edituser.html', {'users': [user_edit]},)

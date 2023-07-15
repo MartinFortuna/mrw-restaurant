@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<div class="container">
+  <div class="row d-flex justify-content-center">
+    <div class="col-lg-4">
+      {% for i in users %}
+      <div class="card bg-dark border border-warning mt-5 ">
+          <div class="card-body">
+            <h5 class="card-title">ID: {{ i.id }}</h5>
+            <p class="card-text">Username: {{ i.username }}</p>
+              <form method="POST">
+                {% csrf_token %}
+                <div class="mb-1">
+                  <label for="first_name" class="form-label">First Name:</label>
+                  <input type="text" name="first_name" class="form-control" value="{{ i.first_name }}">
+                </div>
+                <div class="mb-1">
+                  <label for="last_name" class="form-label">Last Name:</label>
+                  <input type="text" id="last_name" name="last_name" class="form-control" value="{{ i.last_name }}">
+                </div>
+                <div class="mb-5">
+                  <label for="email" class="form-label">Email:</label>
+                  <input type="email" id="email" name="email"  class="form-control" value="{{ i.email }}">
+                </div>
+                <div class="d-flex justify-content-center">
+                  <button type="submit" class="btn btn-success" value="Save">Save</button>
+                </div> 
+              </form>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endblock content %}
