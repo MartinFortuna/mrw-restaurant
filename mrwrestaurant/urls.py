@@ -10,6 +10,5 @@ urlpatterns = [
     path('booklist', mrwViews.booklist, name='booklist'),
     path('contact', mrwViews.contact, name='contact'),
     path('userlist', mrwViews.userlist, name='userlist'),
-    path('userlist', mrwViews.userlist, name='userlist'),
     path('edituser/<int:user_id>/', mrwViews.edituser, name='edituser'),
 ]
