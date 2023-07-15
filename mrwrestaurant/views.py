@@ -187,3 +187,7 @@ def booklist(request):
             'date', 'created')
         return render(request, 'restaurant/booklist.html',
                       {'fields': fields, 'form': bookings})
+
+
+def contact(request):
+    return render(request, 'restaurant/contact.html')

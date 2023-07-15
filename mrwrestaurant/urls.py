@@ -8,4 +8,5 @@ urlpatterns = [
     path('resgister', mrwViews.register, name='register'),
     path('booking', mrwViews.booking, name='booking'),
     path('booklist', mrwViews.booklist, name='booklist'),
+    path('contact', mrwViews.contact, name='contact'),
 ]
