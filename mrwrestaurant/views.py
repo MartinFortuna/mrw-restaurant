@@ -181,7 +181,7 @@ def booklist(request):
         return render(request, 'restaurant/booklist.html',
                       {'fields': fields, 'form': bookings})
     else:
-       
+          
         bookings = tbBooking.objects.all().filter(
             user_id=user.id).order_by(
             'date', 'created')
@@ -191,3 +191,32 @@ def booklist(request):
 
 def contact(request):
     return render(request, 'restaurant/contact.html')
+
+
+def userlist(request):
+    """
+    Enables admin user to view all profiles and regular user
+    to view his/her profile.
+    Allows both admin and regular users to delete profile.
+    """
+    user = request.user
+    if user is None or user.id is None:
+        return redirect('loginuser')
+
+    if 'action_delete' in request.POST:
+        str_user_id = request.POST['action_delete']
+        if str_user_id is not None:
+            if str_user_id.isnumeric():
+                int_user_id = int(str_user_id)
+                user_to_del = User.objects.get(id=int_user_id)
+                user_to_del.delete()
+                if not user.is_superuser:
+                    logout(request)
+                    return redirect('loginuser')
+
+    if user.is_superuser:
+        users = User.objects.all().order_by('username')
+        return render(request, 'restaurant/userlist.html', {'users': users})
+    else:
+        users = [user]
+        return render(request, 'restaurant/userlist.html', {'users': users})
