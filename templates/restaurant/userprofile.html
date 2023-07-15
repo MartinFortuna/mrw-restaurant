@@ -13,6 +13,15 @@
                 <p class="card-text">Last Name: {{ i.last_name }}</p>
                 <p class="card-text">Email: {{ i.email }}</p>
                 <p class="card-text">Joined: {{ i.date_joined }}</p>
+                <form method="POST" action="{% url 'edituser' i.id %}">
+                  {% csrf_token %}
+                  {% if not i.is_superuser %}
+                  <button type="submit" class="btn btn-success mb-3">
+                    Edit
+                  </button>
+                  {% endif %}
+                </form>
+                <form method="POST">
                 <form method="POST">
                   {% csrf_token %}
                   {% if not i.is_superuser %}
