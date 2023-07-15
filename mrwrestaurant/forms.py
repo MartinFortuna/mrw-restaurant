@@ -73,7 +73,7 @@ class UserSignupForm(UserCreationForm):
 
 class DateTimeLocalInput(forms.DateTimeInput):
     input_type = 'datetime-local'
-    
+
 
 class BookingForm(forms.Form):
     date = forms.DateTimeField(
