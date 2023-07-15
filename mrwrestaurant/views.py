@@ -219,4 +219,4 @@ def userlist(request):
         return render(request, 'restaurant/userlist.html', {'users': users})
     else:
         users = [user]
-        return render(request, 'restaurant/userlist.html', {'users': users})
+        return render(request, 'restaurant/userprofile.html', {'users': users})
