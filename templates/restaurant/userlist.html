@@ -1,0 +1,35 @@
+{% extends 'base.html' %} 
+
+{% block content %}
+  <div class="container">
+    <div class="flex-fill text-center">
+        {% for i in users %}
+        <div class="card bg-dark border-warning my-4">
+          <div class="row g-0">
+            <div>
+              <div class="card-body">
+                <h5 class="card-title">ID: {{ i.id }}</h5>
+                <p class="card-text text-warning">Username: {{ i.username }}</p>
+                <p class="card-text">First Name: {{ i.first_name }}</p>
+                <p class="card-text">Last Name: {{ i.last_name }}</p>
+                <p class="card-text">Email: {{ i.email }}</p>
+                <p class="card-text">Admin: {{ i.is_superuser }}</p>
+                <p class="card-text">Joined: {{ i.date_joined }}</p>
+                <form method="POST">
+                  {% csrf_token %}
+                  {% if not i.is_superuser %}
+                  <button type="submit" class="btn btn-danger" name="action_delete" value="{{ i.id }}">
+                      Delete
+                  </button>
+                  {% endif %}
+                </form>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>       
+{% endblock content %}
