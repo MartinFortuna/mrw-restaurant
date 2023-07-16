@@ -173,17 +173,35 @@ As for the colors, I decided to use Bootstrap's dark background along with it's 
 1. [GitHub:](https://github.com/) - Used for version control and storage.
 
 
-
-
-
-
 ## **Testing**
 
 ### Validators
 
 <details><summary>W3C Markup Validator</summary>
 
-- No errors on base.html
+### Manual testing was font on a separate file: 
+
+
+## **Deployment**
+
+### **Clone Repo**
+
+Close the repository so that you can recreate the app by:
+
+1. Going to  https://github.com/MartinFortuna/mrw-restaurant
+2. Click the green Code dropdown arrow and select open with(choose yout IDE)
+
+
+### **Final Deployment with Heroku**
+
+1. [Heroku](https://dashboard.heroku.com/apps) and create a new app.
+2. Choose the app name and setting the region, then "Create app".
+3. On"Settings" go to Config Vars, and set:
+    - SECRET_KEY
+    - DATABASE_URL
+    - CLOUNDINARY_URL
+    - PORT: 8000(Your build might fail if not entered)
+4. Deploy.
 
 
 
