@@ -11,4 +11,5 @@ urlpatterns = [
     path('contact', mrwViews.contact, name='contact'),
     path('userlist', mrwViews.userlist, name='userlist'),
     path('edituser/<int:user_id>/', mrwViews.edituser, name='edituser'),
+    path('menu', mrwViews.menu, name='menu'),
 ]

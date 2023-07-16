@@ -181,7 +181,7 @@ def booklist(request):
         return render(request, 'restaurant/booklist.html',
                       {'fields': fields, 'form': bookings})
     else:
-          
+
         bookings = tbBooking.objects.all().filter(
             user_id=user.id).order_by(
             'date', 'created')
@@ -233,3 +233,7 @@ def edituser(request, user_id):
             return redirect('userlist')
 
     return render(request, 'restaurant/edituser.html', {'users': [user_edit]},)
+
+
+def menu(request):
+    return render(request, 'restaurant/menu.html')
