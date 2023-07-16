@@ -184,12 +184,17 @@ As for the colors, I decided to use Bootstrap's dark background along with it's 
 
 ## **Deployment**
 
+### **Gitpod**
+
+This project was created based on CI's template, I used Cloudinary for images and MyElephantSQL for the database.
+
+
 ### **Clone Repo**
 
 Close the repository so that you can recreate the app by:
 
 1. Going to  https://github.com/MartinFortuna/mrw-restaurant
-2. Click the green Code dropdown arrow and select open with(choose yout IDE)
+2. Click the green Code dropdown arrow and select open with(choose your IDE)
 
 
 ### **Final Deployment with Heroku**
@@ -202,6 +207,12 @@ Close the repository so that you can recreate the app by:
     - CLOUNDINARY_URL
     - PORT: 8000(Your build might fail if not entered)
 4. Deploy.
+
+
+# **Acknowledgments** 
+
+To my friends Guillerme and Juliana, the biggest thanks I can give for all the mentoring provided.
+
 
 
 
