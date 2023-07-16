@@ -143,6 +143,35 @@ As for the colors, I decided to use Bootstrap's dark background along with it's 
 - Creation of reservation on the admin side.
 
 
+## **Technologies**
+
+### Languages Used
+
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [Bootstrap](https://getbootstrap.com)
+- [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+- [Python](https://www.python.org/)
+- [Django](https://www.djangoproject.com/)
+- [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+
+
+### Frameworks and Tools Used
+
+1. [Google Fonts](https://fonts.google.com/)
+1. [Font Awesome](https://fontawesome.com/)
+1. [Balsamiq](https://balsamiq.com/)
+1. [Stackoverflow](https://stackoverflow.com/)
+1. [W3schools](https://www.w3schools.com/)
+1. [W3C HTML Validator](https://validator.w3.org/)
+1. [W3C JigSaw Validator](https://jigsaw.w3.org/css-validator/)
+1. [JSHint](https://jshint.com/)
+1. [Grammarly](https://www.grammarly.com/)
+1. [Favicon.io](https://favicon.io/)
+1. [Freelogodesign](https://www.freelogodesign.org/)
+1. [Pexels](https://www.pexels.com/)
+
+
+
 
 
 
