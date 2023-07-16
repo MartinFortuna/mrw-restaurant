@@ -112,6 +112,44 @@ As for the colors, I decided to use Bootstrap's dark background along with it's 
 ![Data model](docs/screenshots/datamodel.png)
 
 
+## **Features**
+
+### Existing Features: 
+
+- Well layed out home page with pleasing colors.
+- Hamburger navigation across all devices for easy navigation.
+- Login icon and registration button that transform into logout button once user is authenticated.
+- Role-based login and current login state is reflected to the user.
+- Users are not permitted to access restricted content or functionality prior to role-based login.
+- Create, read and edit funcionality for reservations on regular user UX.
+- View, edit, and delete Profile functionality for regular users.
+- Better admin user UX with using Django's admin interface, also for consistency.
+- Accept or deny booking requests funcionality on admin user UX.
+- Edit and delete functionality for Profile on regular user UX.
+- Reservation request status(pending, accepted, rejected).
+- Nav bar links that change according to user type authentication.
+- Contact page with opening hours, send email funcionality and contact details.
+- Menu page.
+- Footer with social media links.
+- Custom 404 page.
+
+
+###  Features that can be implemented:
+
+- Sorting reservations(per date, time) on admin view.
+- Google maps in contact page.
+- Booking and resgistration  confirmation email.
+- Map of restaurant and occupancies according to reservations made and vacancy.
+- Creation of reservation on the admin side.
+
+
+
+
+
+
+
+
+
 
 
 
