@@ -172,6 +172,17 @@ As for the colors, I decided to use Bootstrap's dark background along with it's 
 
 
 
+## **Testing**
+
+### Validators
+
+<details><summary>W3C Markup Validator</summary>
+
+- No errors on base.html
+
+
+
+
 
 
 

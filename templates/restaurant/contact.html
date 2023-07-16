@@ -1,5 +1,7 @@
 {% extends "base.html" %}
+{% load static %}
 {% block content %}
+
     <div class="container">
         <div class="col-12 text-center">
             <h3>Hours</h3>
@@ -41,7 +43,7 @@
                 <div class="card bg-dark border-warning mt-4">
                     <div class="card bg-dark card-body">
                         <div class="col-12 py-3">
-                            <form onsubmit="sendEmail()">
+                            <form id="emailForm">
                                 <div class="form-group">
                                     <h5 for="name">Full name</h5>
                                     <input type="text" class="form-control" id="name" required>
@@ -55,9 +57,20 @@
                                     <textarea class="form-control" id="message" cols="30" rows="10" required></textarea>
                                 </div>
                                 <div class="mt-3">
-                                    <button type="submit" class="btn btn-warning">Send Email</button>
+                                    <button type="submit" id="submitbtn" class="btn btn-warning">Send Email</button>
                                 </div>
                             </form>
+                            <script>
+                                var myform = document.getElementById("emailForm");
+                                console.log(`null? ${myform}`);
+                                if(myform){
+                                    myform.addEventListener("submit", function (event){
+                                        event.preventDefault();
+                                        console.log(event);    
+                                        sendEmail();
+                                        });   
+                                }
+                            </script>
                         </div>
                     </div>
                 </div>
