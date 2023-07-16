@@ -157,18 +157,23 @@ As for the colors, I decided to use Bootstrap's dark background along with it's 
 
 ### Frameworks and Tools Used
 
-1. [Google Fonts](https://fonts.google.com/)
-1. [Font Awesome](https://fontawesome.com/)
-1. [Balsamiq](https://balsamiq.com/)
-1. [Stackoverflow](https://stackoverflow.com/)
-1. [W3schools](https://www.w3schools.com/)
-1. [W3C HTML Validator](https://validator.w3.org/)
-1. [W3C JigSaw Validator](https://jigsaw.w3.org/css-validator/)
-1. [JSHint](https://jshint.com/)
-1. [Grammarly](https://www.grammarly.com/)
-1. [Favicon.io](https://favicon.io/)
-1. [Freelogodesign](https://www.freelogodesign.org/)
-1. [Pexels](https://www.pexels.com/)
+1. [Google Fonts](https://fonts.google.com/) - Used for applying Oswald and sans-serif fonts.
+1. [Font Awesome](https://fontawesome.com/)- User for social media icons.
+1. [Coolors](https://coolors.co/) - Used to design colors palette. 
+1. [Balsamiq](https://balsamiq.com/) - Used for wireframes.
+1. [Stackoverflow](https://stackoverflow.com/) - For general coding questions.
+1. [W3schools](https://www.w3schools.com/) -  For general coding questions.
+1. [W3C HTML Validator](https://validator.w3.org/) - Used to validate all HTML pages.
+1. [W3C JigSaw Validator](https://jigsaw.w3.org/css-validator/) - Used to validate CSSS.
+1. [JSHint](https://jshint.com/) - Used to validate Javascript.
+1. [CI Python Linter](https://pep8ci.herokuapp.com/) - Used to validate Python.
+1. [Grammarly](https://www.grammarly.com/) - Used for spelling mistakes correction.s
+1. [Favicon.io](https://favicon.io/) - Used to create the favicon.
+1. [Freelogodesign](https://www.freelogodesign.org/) - Used to create the logo.
+1. [GitHub:](https://github.com/) - Used for version control and storage.
+
+
+
 
 
 
