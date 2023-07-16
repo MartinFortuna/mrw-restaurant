@@ -150,6 +150,16 @@ I've only included lighthouse results for mobile and desktop for the home page a
 |              |       |        |    |      |
 |404 page | Any unknown url  | Custom 404 page is displayed with link to home page    | As Expected   | Pass      |
 
+
+- Sample of email received by admin user:
+
+![Received emails](/docs/screenshots/Email.png)
+
+- Sample of 404 page:
+
+![404 page](/docs/screenshots/404.png)
+
+
 </details>
 
 ### Security and authentication
@@ -176,6 +186,7 @@ I've only included lighthouse results for mobile and desktop for the home page a
 
 </details>
 
+### All the above tests were conduction both on development phase and live app.
 
 ## Bugs
 

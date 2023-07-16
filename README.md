@@ -1,9 +1,9 @@
-# **[Au Revoir Bistrot](#)**  French Restaurant
+# **[Au Revoir Bistrot](https://mrw-restaurant-3c3e8ad5a844.herokuapp.com/)**  French Restaurant
 ![](docs/screenshots/Amiresponsive.png)
 
 ## **Overview**
 
-Au Revoir Bistrot is a website for a fictional restaurant developed for lurning purposes. The restaurant is located in the center of Paris and offers classic French food.
+Au Revoir Bistrot is a website for a fictional restaurant developed for learning purposes. The restaurant is located in the center of Paris and offers classic French food.
 
 Developed by Martin Fortuna
 
@@ -28,13 +28,13 @@ The development phase was applied with Agile methodologies to deliver small feat
 
 ### **User stories**
 
-- A - As a developer I can correctly set up the basic project as in CI walkthrough so that all the basis is set to start development. 
+- A - As a developer, I can correctly set up the basic project as in the CI walkthrough so that all the basis is set to start development. 
 - B - As a user, I can view the website on different devices so that I can access it anytime.
-- C - As a user, I can register,login or logout  on the website so that I can access the  reservations feature.
+- C - As a user, I can register, log in, or log out on the website so that I can access the reservations feature.
 - D - As a regular user, I can create, view or cancel my reservation so that I can change plans.
 - E - As a user, I can choose to view, edit and delete my profile so that correct and erase my information.
 - F - As an admin user, I can choose to accept or deny reservation requests so that I do not overbook my restaurant.
-- G - As an admin user, I can view, edit or delete my customer list/profile so that manage the customers profiles.
+- G - As an admin user, I can view, edit or delete my customer list/profile so that manage the customer's profiles.
 - H - As a developer, I can avoid double bookings so that the restaurant is not spammed.
 - I - As a user, I can view a simplistic menu so that I can easily understand the options.
 - J - As a user, I can find opening hours and contact information so that I contact the restaurant within business hours.
@@ -75,12 +75,12 @@ Scores:
 
 ## **Design**
 
-The website is fully responsive and designed with an easy access hamburger menu to make nagivation intuitive, the login button button will be replaced by a login icon so that the device stays reponsive on very small screens. 
-As for the colors, I decided to use Bootstrap's dark background along with it's warning yellow across the website for consistency and pleasing colors. [ Au revoir Bistrot colors](docs/screenshots/colors.png)
+The website is fully responsive and designed with an easy-access hamburger menu to make navigation intuitive, the login button button will be replaced by a login icon so that the device stays responsive on very small screens. 
+As for the colors, I decided to use Bootstrap's dark background along with its warning yellow across the website for consistency and pleasing colors. [ Au revoir Bistrot colors](docs/screenshots/colors.png)
 
 ### App structure: 
 
-- Non authenticated user Flow:
+- Non-authenticated user Flow:
 
 ![Non authenticated user](docs/screenshots/Unauthenticateduser.png)
 
@@ -116,19 +116,19 @@ As for the colors, I decided to use Bootstrap's dark background along with it's 
 
 ### Existing Features: 
 
-- Well layed out home page with pleasing colors.
+- Well laid out home page with pleasing colors.
 - Hamburger navigation across all devices for easy navigation.
-- Login icon and registration button that transform into logout button once user is authenticated.
+- Login icon and registration button that transforms into a logout button once the user is authenticated.
 - Role-based login and current login state is reflected to the user.
-- Users are not permitted to access restricted content or functionality prior to role-based login.
-- Create, read and edit funcionality for reservations on regular user UX.
+- Users are not permitted to access restricted content or functionality before role-based login.
+- Create, read, and edit functionality for reservations on regular user UX.
 - View, edit, and delete Profile functionality for regular users.
-- Better admin user UX with using Django's admin interface, also for consistency.
-- Accept or deny booking requests funcionality on admin user UX.
+- Better admin user UX by using Django's admin interface, also for consistency.
+- Accept or deny booking requests functionality on admin user UX.
 - Edit and delete functionality for Profile on regular user UX.
 - Reservation request status(pending, accepted, rejected).
 - Nav bar links that change according to user type authentication.
-- Contact page with opening hours, send email funcionality and contact details.
+- Contact page with opening hours, send email functionality, and contact details.
 - Menu page.
 - Footer with social media links.
 - Custom 404 page.
@@ -137,10 +137,10 @@ As for the colors, I decided to use Bootstrap's dark background along with it's 
 ###  Features that can be implemented:
 
 - Sorting reservations(per date, time) on admin view.
-- Google maps in contact page.
-- Booking and resgistration  confirmation email.
-- Map of restaurant and occupancies according to reservations made and vacancy.
-- Creation of reservation on the admin side.
+- Google Maps on the contact page.
+- Booking and registration confirmation email.
+- Map of restaurants and occupancies according to reservations made and vacancies.
+- Creation of reservations on the admin side.
 
 
 ## **Technologies**
@@ -177,7 +177,7 @@ As for the colors, I decided to use Bootstrap's dark background along with it's 
 
 Please refer to the TESTING.md file for production and live app testing.
 
-### Manual testing was font on a separate file: 
+### Manual testing was done on a separate file: [TESTING.md](TESTING.md)
 
 
 ## **Deployment**
@@ -185,6 +185,8 @@ Please refer to the TESTING.md file for production and live app testing.
 ### **Gitpod**
 
 This project was created based on CI's template, I used Cloudinary for images and MyElephantSQL for the database.
+
+- To access the admin functionality(not the default Django Admin panel), create a superuser and login on the page as a regular user would.
 
 
 ### **Clone Repo**
@@ -198,7 +200,7 @@ Close the repository so that you can recreate the app by:
 ### **Final Deployment with Heroku**
 
 1. [Heroku](https://dashboard.heroku.com/apps) and create a new app.
-2. Choose the app name and setting the region, then "Create app".
+2. Choose the app name and set the region, then "Create app".
 3. On"Settings" go to Config Vars, and set:
     - SECRET_KEY
     - DATABASE_URL
@@ -206,8 +208,19 @@ Close the repository so that you can recreate the app by:
     - PORT: 8000(Your build might fail if not entered)
 4. Deploy.
 
+## **Credits** 
 
-# **Acknowledgments** 
+1. [Stackoverflow](https://stackoverflow.com/) - For all the amazing threads, almost any issue can be solved there.
+1. [Youtube](https://www.youtube.com/) - For the multiple tutorial I watched in preparation for this project.
+1. [Django Documentation](https://docs.djangoproject.com/en/4.0/) - For clear and precise information.
+
+### **Sources**
+
+ - Book:Python Web Development with Django (Jeff Forcier, Paul Bissex, Wesley Chun)
+ - Book: Django 4 for the impatient(Daniel Correa)
+
+
+## **Acknowledgments** 
 
 To my friends Guillerme and Juliana, the biggest thanks I can give for all the mentoring provided.
 
