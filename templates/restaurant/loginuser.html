@@ -14,11 +14,11 @@
                   <form method="POST">
                     {% csrf_token %}
                     <div class="mb-3">
-                      <label for="id_username" class="form-label">Username:</label>
-                      <input type="text" name="username" class="form-control" autofocus="" autocapitalize="none" autocomplete="username" maxlength="50" required="" id="id_username id="exampleInputPassword1>
+                      <label class="form-label">Username:</label>
+                      <input type="text" name="username" class="form-control" autofocus="" autocapitalize="none" autocomplete="username" maxlength="50" required="" id="id_username">
                     </div>
                     <div class="mb-3">
-                      <label for="id_password" class="form-label">Password:</label>
+                      <label  class="form-label">Password:</label>
                       <input type="password" name="password" class="form-control" autocomplete="current-password" required="" id="id_password">
                     </div>
                     <div class="d-flex justify-content-center">
