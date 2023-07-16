@@ -21,7 +21,6 @@
                   {% endif %}
                 </form>
                 <form method="POST">
-                <form method="POST">
                   {% csrf_token %}
                   {% if not i.is_superuser %}
                   <button type="submit" class="btn btn-danger" name="action_delete" value="{{ i.id }}">
@@ -34,7 +33,6 @@
           </div>
         </div>
         {% endfor %}
-      </div>
     </div>
   </div>       
 {% endblock content %}

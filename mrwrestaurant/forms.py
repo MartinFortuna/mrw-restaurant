@@ -53,7 +53,7 @@ class UserSignupForm(UserCreationForm):
                 'placeholder': 'Password',
                 'class': 'form-control',
                 'data-toggle': 'password',
-                'id': 'password',
+                'id': 'password1',
             }
         )
     )
@@ -65,7 +65,7 @@ class UserSignupForm(UserCreationForm):
                 'placeholder': 'Confirm Password',
                 'class': 'form-control',
                 'data-toggle': 'password',
-                'id': 'password',
+                'id': 'password2',
             }
         )
     )
