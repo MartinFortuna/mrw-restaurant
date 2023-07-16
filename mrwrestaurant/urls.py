@@ -13,3 +13,5 @@ urlpatterns = [
     path('edituser/<int:user_id>/', mrwViews.edituser, name='edituser'),
     path('menu', mrwViews.menu, name='menu'),
 ]
+
+handler404 = 'mrwrestaurant.views.handler_404'
