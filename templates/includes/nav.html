@@ -12,16 +12,12 @@
         Bistrot</a>
 
       {% if user.is_authenticated %}
-      <a href="{% url 'logoutuser' %}">
-        <button type="button" class="btn btn-warning btn-sm">Logout</button>
-      </a>
+      <a href="{% url 'logoutuser' %}" type="button" class="btn btn-warning btn-sm">Logout</a>
       {% else %}
       <a href="{% url 'loginuser' %}">
         <i class="fa-solid fa-right-to-bracket fa-xl m-2 custom-color"></i>
       </a>
-      <a href="{% url 'register' %}">
-        <button type="button" class="btn btn-warning btn-sm">Sign-up</button>
-      </a>
+      <a href="{% url 'register' %}" type="button" class="btn btn-warning btn-sm">Sign-up</a>
       {% endif %}
 
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -60,4 +56,5 @@
           {% endif %}
         </ul>
       </div>
+    </div>
   </nav>
