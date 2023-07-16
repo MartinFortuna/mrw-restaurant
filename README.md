@@ -177,7 +177,8 @@ As for the colors, I decided to use Bootstrap's dark background along with it's 
 
 ### Validators
 
-<details><summary>W3C Markup Validator</summary>
+
+
 
 ### Manual testing was font on a separate file: 
 
