@@ -11,7 +11,7 @@ function sendEmail(){
             document.getElementById("name").value = "";
             document.getElementById("email").value = "";
             document.getElementById("message").value = "";
-            alert("Thanks for your message, we will get back to you within 1 business day." + res.text);
+            alert(" Your email was sent successfully" + res.text);
         })
 }
 
