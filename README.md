@@ -175,10 +175,7 @@ As for the colors, I decided to use Bootstrap's dark background along with it's 
 
 ## **Testing**
 
-### Validators
-
-
-
+Please refer to the TESTING.md file for production and live app testing.
 
 ### Manual testing was font on a separate file: 
 
