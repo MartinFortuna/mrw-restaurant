@@ -12,6 +12,6 @@ function sendEmail(){
             document.getElementById("email").value = "";
             document.getElementById("message").value = "";
             alert(" Your email was sent successfully" + res.text);
-        })
+        });
 }
 
