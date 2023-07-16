@@ -1,4 +1,5 @@
 # **[Au Revoir Bistrot](#)**  French Restaurant
+![](docs/screenshots/Amiresponsive.png)
 
 ## **Overview**
 
@@ -22,7 +23,7 @@ As part of my journey as a student of Code Institute, the goal of this project i
 
 The development phase was applied with Agile methodologies to deliver small features with efficiency and maintain hypothetical business value. User stories were prioritized according to the MoSCoW method to deliver the primarily needed functionalities first.
 
-![Project Kanban](https://github.com/users/MartinFortuna/projects/6/views/1?visibleFields=%5B%22Title%22%2C%22Assignees%22%2C%22Status%22%2C%22Labels%22%2C%22Repository%22%5D)
+[Project Kanban](https://github.com/users/MartinFortuna/projects/6/views/1)
 
 
 ### **User stories**
@@ -75,7 +76,7 @@ Scores:
 ## **Design**
 
 The website is fully responsive and designed with an easy access hamburger menu to make nagivation intuitive, the login button button will be replaced by a login icon so that the device stays reponsive on very small screens. 
-As for the colors, I decided to use Bootstrap's dark background along with it's warning yellow across the website for consistency.
+As for the colors, I decided to use Bootstrap's dark background along with it's warning yellow across the website for consistency and pleasing colors. [ Au revoir Bistrot colors](docs/screenshots/colors.png)
 
 ### App structure: 
 
@@ -104,6 +105,13 @@ As for the colors, I decided to use Bootstrap's dark background along with it's 
 |[Profile](docs/screenshots/regularuserprofile.png)|[Same as Desktop](docs/screenshots/regularuserprofile.png)|[Same as Desktop](docs/screenshots/regularuserprofile.png)|
 |[Book a table](docs/screenshots/bookatableDesktop.png)|[Same as Desktop](docs/screenshots/bookatableDesktop.png)|[Same as Desktop](docs/screenshots/bookatableDesktop.png)|
 |[My Bookings](docs/screenshots/mybookindsDesktop.png)|[Same as Desktop](docs/screenshots/mybookindsDesktop.png)|[Same as Desktop](docs/screenshots/mybookindsDesktop.png)|
+
+
+### Data Model: 
+
+![Data model](docs/screenshots/datamodel.png)
+
+
 
 
 
