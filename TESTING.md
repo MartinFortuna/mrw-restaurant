@@ -41,6 +41,42 @@
 | style.css | static/css/style.css | PASS | [link](docs/validation/style.css.png) |
 
 
+## Responsiveness
+
+The website was designed to be fully responsive from screenwith 280px above.
+
+| **Browser Tested** | **Actual Result** | **Pass/Fail** |
+| ------------------ | ----------------- | ------------- |
+| Chrome             | As Expected       | Pass          |
+| Firefox            | As Expected       | Pass          |
+| Edge               | As Expected       | Pass          |
+| Mac OS Safari      | As Expected       | Pass          |
+| Safari             | As Expected       | Pass          |
+
+
+| **Devices Tested** | **Actual Result** | **Pass/Fail** |
+|-------------------|-------------------|---------------|
+| Iphone SE        | As Expected       | Pass          |
+| Iphone XR   | As Expected       | Pass          |
+| Iphone 12 pro     | As Expected       | Pass          |
+| Pixel 5  | As Expected       | Pass          |
+| Samsung Note 20   | As Expected       | Pass          |
+| Samsung S21+      | As Expected       | Pass          |
+| Samsung Tab S7+   | As Expected       | Pass          |
+| iPhone 13 Pro Max | As Expected       | Pass          |
+| iPhone 11         | As Expected       | Pass          |
+| iPad Pro 12 inch  | As Expected       | Pass          |
+| iPad Pro Air       | As Expected       | Pass          |
+| Galaxy Fold | As Expected       | Pass          |
+| Iphone 5 | As Expected       | Pass          |
+
+
+## Manual User Story Testing
+
+
+
+
+
 
 
 
